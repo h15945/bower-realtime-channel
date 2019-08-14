@@ -142,8 +142,6 @@
       var split = server.split(":");
       var host = split[0];
       var port = Number(split[1]);
-      host = 'wss://iot.eclipse.org';
-      port = 1883;
       bus = new realtime.channel.Bus(host, port);
 
       bus.onopen = function() {
